@@ -75,3 +75,13 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" クリップボードの共有機能の追加
+set clipboard=unnamedplus
+
+" 1. 括弧や引用符を自動で閉じる
+inoremap ( ()<Left>
+inoremap { {}<left>
+inoremap [ []<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
+
